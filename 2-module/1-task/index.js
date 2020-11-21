@@ -4,5 +4,11 @@
  * @returns {Number}
  */
 function sumSalary(salaries) {
-  // ваш код...
+	let summa = 0;
+	for (let value of Object.values(salaries)) {
+		if (typeof value == 'number') {
+			summa += value;
+		}
+	}
+	return summa;
 }
